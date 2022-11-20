@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+
+  :global {
+    .ant-space-item {
+      width: 100%;
+
+      .ant-pagination {
+        display: inline-block;
+      }
+    }
+
+    .ant-collapse-content-box {
+      padding: 0;
+
+      .ant-table-cell {
+        background: transparent;
+        padding: 10px;
+
+        &:hover {
+          background: transparent;
+        }
+      }
+    }
+  }
+
+  .pagination {
+    text-align: center;
+  }
+}

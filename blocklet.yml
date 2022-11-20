@@ -1,0 +1,43 @@
+name: web3
+description: Blocklet Project
+group: static
+main: dist
+author:
+  name: gary
+  email: 1032230992@qq.com
+specVersion: 1.2.7
+files:
+  - blocklet.md
+  - screenshots
+logo: logo.png
+interfaces:
+  - type: web
+    name: publicUrl
+    path: /
+    prefix: '*'
+    port: BLOCKLET_PORT
+    protocol: http
+did: z8iZtjmDeUYbdTxUh2MsJrxWXEADUNaL9iiye
+version: 1.0.0
+community: ''
+documentation: ''
+homepage: ''
+license: ''
+payment:
+  price: []
+  share: []
+timeout:
+  start: 60
+requirements:
+  server: '>=1.7.0'
+  os: '*'
+  cpu: '*'
+  nodejs: '*'
+environments: []
+capabilities:
+  clusterMode: false
+  component: true
+screenshots: []
+components: []
+scripts:
+  dev: npm run start
