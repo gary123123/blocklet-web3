@@ -32,7 +32,7 @@ const TransactionList = ({ data }: TransactionListProps) => {
         </Col>
         <Col>
           <div>{formatBtcValue(btvValue)} BTC</div>
-          <div>Fee {itemValue.fee / 1000}K</div>
+          <div>Fee {itemValue.fee / 1000}K Sats</div>
         </Col>
       </Row>
     );

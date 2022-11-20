@@ -2,7 +2,7 @@ import { ProDescriptions } from '@ant-design/pro-components';
 import { Typography, Tooltip } from 'antd';
 import { BlockInfo } from '@/types/block-info';
 import moment from 'moment';
-import { formatHash } from '@/utils/format';
+import { formatHash, formatBtcValue } from '@/utils/format';
 
 const { Paragraph } = Typography;
 
@@ -34,6 +34,9 @@ const BlockDetail = ({ data }: BlockDetailProps) => {
     {
       title: 'fee',
       dataIndex: 'fee',
+      render: (_, record) => {
+        return `${formatBtcValue(record.fee)} BTC`;
+      },
     },
 
     {
